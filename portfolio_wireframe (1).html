@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Wireframe - Suhail Ismaili</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        
+        /* Wireframe styling */
+        .wireframe-element {
+            border: 2px solid #333;
+            background-color: #fff;
+            position: relative;
+        }
+        
+        .wireframe-text {
+            background: repeating-linear-gradient(
+                90deg,
+                #ddd,
+                #ddd 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            height: 20px;
+            margin: 5px 0;
+        }
+        
+        .wireframe-button {
+            border: 2px solid #333;
+            background-color: #e0e0e0;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        /* Header/Navigation */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .nav-item {
+            padding: 10px 20px;
+            border: 1px dashed #666;
+            background-color: #444;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            border: 2px dashed rgba(255,255,255,0.5);
+            padding: 1rem;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px dashed rgba(255,255,255,0.3);
+            padding: 0.5rem;
+            background-color: rgba(255,255,255,0.05);
+        }
+        
+        .cta-button {
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        /* Content Sections */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding: 1rem;
+            border: 2px dashed #333;
+            background-color: #f0f0f0;
+        }
+        
+        .content-box {
+            padding: 2rem;
+            border: 2px solid #333;
+            background-color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-item {
+            padding: 1rem;
+            border: 2px solid #333;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        /* Annotations */
+        .annotation {
+            position: absolute;
+            background-color: #ffeb3b;
+            padding: 5px 10px;
+            font-size: 12px;
+            border: 1px solid #333;
+            z-index: 10;
+        }
+        
+        .hero::before {
+            content: "HERO SECTION";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffeb3b;
+            padding: 5px 10px;
+            font-size: 12px;
+            border: 1px solid #333;
+            color: #333;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header wireframe-element">
+        <div class="annotation" style="top: -25px; left: 0;">NAVIGATION BAR</div>
+        <nav class="nav-container">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Over Mij</div>
+            <div class="nav-item">Vaardigheden</div>
+            <div class="nav-item">Contact</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero wireframe-element">
+        <div class="hero-title">
+            Suhail Ismaili
+        </div>
+        <div class="hero-subtitle">
+            Web Developer uit Rotterdam
+        </div>
+        <button class="cta-button wireframe-button">
+            Neem Contact Op
+        </button>
+    </section>
+
+    <!-- Over Mij Section -->
+    <section class="section">
+        <div class="annotation" style="top: 0; left: 0;">ABOUT SECTION</div>
+        <h2 class="section-title">Over Mij</h2>
+        <div class="content-box wireframe-element">
+            <div class="wireframe-text"></div>
+            <div class="wireframe-text" style="width: 80%;"></div>
+            <div class="wireframe-text" style="width: 90%;"></div>
+            <p style="margin-top: 1rem; padding: 1rem; border: 1px dashed #666;">
+                Hallo! Ik ben Suhail, een web developer uit Rotterdam. Ik maak websites met HTML, CSS, PHP, SQL en JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <!-- Vaardigheden Section -->
+    <section class="section">
+        <div class="annotation" style="top: 0; left: 0;">SKILLS SECTION</div>
+        <h2 class="section-title">Mijn Vaardigheden</h2>
+        <div class="skills-grid">
+            <div class="skill-item wireframe-element">
+                <div class="annotation" style="top: -20px; right: 0;">SKILL CARD</div>
+                <h3>HTML</h3>
+                <div class="wireframe-text"></div>
+            </div>
+            <div class="skill-item wireframe-element">
+                <h3>CSS</h3>
+                <div class="wireframe-text"></div>
+            </div>
+            <div class="skill-item wireframe-element">
+                <h3>JavaScript</h3>
+                <div class="wireframe-text"></div>
+            </div>
+            <div class="skill-item wireframe-element">
+                <h3>PHP</h3>
+                <div class="wireframe-text"></div>
+            </div>
+            <div class="skill-item wireframe-element">
+                <h3>SQL</h3>
+                <div class="wireframe-text"></div>
+            </div>
+            <div class="skill-item wireframe-element">
+                <h3>Oracle APEX</h3>
+                <div class="wireframe-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="annotation" style="top: 0; left: 0;">CONTACT SECTION</div>
+        <h2 class="section-title">Contact</h2>
+        <div class="content-box wireframe-element">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <div class="annotation" style="top: -20px; left: 0;">CONTACT FORM</div>
+                    <div class="wireframe-text"></div>
+                    <div class="wireframe-text" style="width: 70%;"></div>
+                    <div class="wireframe-text"></div>
+                    <div class="wireframe-text" style="height: 60px;"></div>
+                    <button class="wireframe-button" style="margin-top: 1rem;">Verstuur</button>
+                </div>
+                <div>
+                    <div class="annotation" style="top: -20px; right: 0;">CONTACT INFO</div>
+                    <div class="wireframe-text"></div>
+                    <div class="wireframe-text" style="width: 60%;"></div>
+                    <div class="wireframe-text" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 2rem; margin-top: 3rem;" class="wireframe-element">
+        <div class="annotation" style="top: -25px; left: 50%; transform: translateX(-50%);">FOOTER</div>
+        <div class="wireframe-text" style="background-color: #555; margin: 0 auto; width: 200px;"></div>
+    </footer>
+
+    <!-- Legend -->
+    <div style="position: fixed; bottom: 20px; right: 20px; background-color: white; border: 2px solid #333; padding: 1rem; max-width: 200px;">
+        <h4>Wireframe Legende:</h4>
+        <div style="margin: 5px 0;">
+            <span style="display: inline-block; width: 20px; height: 10px; background: repeating-linear-gradient(90deg, #ddd, #ddd 5px, transparent 5px, transparent 10px);"></span>
+            <small> = Tekst content</small>
+        </div>
+        <div style="margin: 5px 0;">
+            <span style="display: inline-block; width: 20px; height: 10px; border: 1px solid #333; background: #e0e0e0;"></span>
+            <small> = Button/Interactief</small>
+        </div>
+        <div style="margin: 5px 0;">
+            <span style="display: inline-block; width: 20px; height: 10px; background: #ffeb3b; border: 1px solid #333;"></span>
+            <small> = Sectie labels</small>
+        </div>
+    </div>
+</body>
+</html>
