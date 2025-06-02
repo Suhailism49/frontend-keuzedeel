@@ -1,0 +1,150 @@
+/* Zet het lettertype en basisstijl voor de hele pagina */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  background: #f4f7fa;
+  color: #22223b;
+  line-height: 1.6;
+}
+
+/* Navigatiebalk achtergrond en tekstkleur */
+nav {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.5em 0;
+}
+/* Navigatielijst horizontaal uitlijnen met flexbox */
+nav .nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Afstand tussen navigatie-items */
+nav .nav-list li {
+  margin: 0 1em;
+}
+/* Navigatielinks opmaken */
+nav .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+/* Hover- en focusstijl voor navigatielinks */
+nav .nav-list a:focus, nav .nav-list a:hover {
+  background: #38bdf8;
+  color: #2563eb;
+}
+
+/* Header opmaak en uitlijning */
+header {
+  text-align: center;
+  padding: 3em 1em 2em;
+  background: #2563eb;
+  color: #fff;
+}
+/* Stijl voor de call-to-action knop in de header */
+header .btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.75em 2em;
+  background: #fbbf24;
+  color: #22223b;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+/* Hover- en focusstijl voor de headerknop */
+header .btn:focus, header .btn:hover {
+  background: #38bdf8;
+  color: #2563eb;
+}
+
+/* Secties centreren en opmaken */
+section {
+  max-width: 700px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Koptekst marges */
+h2 {
+  margin-top: 0;
+}
+
+/* Vaardighedenlijst als grid tonen */
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  padding: 0;
+}
+/* Afstand tussen skill-items */
+.skills-list li {
+  margin-bottom: 1em;
+}
+
+/* Skillnaam vetgedrukt */
+.skill-name {
+  font-weight: 700;
+}
+
+/* Stijl voor de skill-balk */
+.skill-bar {
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 0.3em;
+}
+/* Stijl voor het gevulde deel van de skill-balk */
+.skill-bar .skill-level {
+  background: #2563eb;
+  color: #fff;
+  height: 100%;
+  text-align: right;
+  padding-right: 0.5em;
+  font-size: 0.95em;
+  border-radius: 4px 0 0 4px;
+  transition: width 1s;
+}
+
+/* Contactinformatie marges */
+.contact-info {
+  margin-top: 2em;
+}
+
+/* Footer opmaak */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #2563eb;
+  color: #fff;
+  margin-top: 2em;
+}
+
+/* Responsive aanpassingen voor mobiel */
+@media (max-width: 600px) {
+  section {
+    padding: 1em;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li {
+    margin: 0.5em 0;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
