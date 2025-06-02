@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suhail Ismaili - Web Developer uit Rotterdam">
+    <title>Suhail Ismaili - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigatie -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#over">Over Mij</a></li>
+            <li><a href="#vaardigheden">Vaardigheden</a></li>
+            <li><a href="#projecten">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Suhail Ismaili</h1>
+        <p>Web Developer uit Rotterdam</p>
+        <a href="#contact" class="btn">Neem Contact Op</a>
+    </header>
+
+    <!-- Over Mij -->
+    <section id="over">
+        <h2>Over Mij</h2>
+        <p>Hallo! Ik ben Suhail, een web developer uit Rotterdam. Ik maak websites met HTML, CSS en JavaScript.</p>
+    </section>
+
+    <!-- Vaardigheden -->
+    <section id="vaardigheden">
+        <h2>Mijn Vaardigheden</h2>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="90">90%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="85">85%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="80">80%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">PHP</span>
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="75">75%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="70">70%</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projecten -->
+    <section id="projecten">
+        <h2>Mijn Projecten</h2>
+        <ul class="projects-list">
+            <li class="project-item">
+                <h3>Website Project 1</h3>
+                <p>Een mooie website gemaakt met HTML en CSS</p>
+                <ul class="project-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+            <li class="project-item">
+                <h3>Web App Project 2</h3>
+                <p>Een interactieve web applicatie met JavaScript</p>
+                <ul class="project-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li class="project-item">
+                <h3>Database Project 3</h3>
+                <p>Een website met database connectie</p>
+                <ul class="project-tags">
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <ul class="form-list">
+                <li>
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                <li>
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht" required></textarea>
+                </li>
+                <li>
+                    <button type="submit">Verstuur</button>
+                </li>
+            </ul>
+        </form>
+        
+        <ul class="contact-info">
+            <li>
+                <strong>Email:</strong> 
+                <a href="mailto:9022614@student.zadkine.nl">9022614@student.zadkine.nl</a>
+            </li>
+            <li>
+                <strong>Telefoon:</strong> 
+                <a href="tel:+31644138796">+31 644 138 796</a>
+            </li>
+            <li>
+                <strong>Locatie:</strong> 
+                Rotterdam, Nederland
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Suhail Ismaili - Web Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
